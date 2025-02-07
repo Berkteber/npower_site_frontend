@@ -23,7 +23,7 @@ function BlogSingle() {
     <>
     <div className="blog-single">
       <div className="blog-single-hero">
-        <img src={api + featuredImage}/>
+        <img src={api + featuredImage} alt="Main Image"/>
         <h2>{Title}</h2>
       </div>
       <div className="blog-single-content container">

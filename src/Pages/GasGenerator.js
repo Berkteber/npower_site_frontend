@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import PageTitle from '../Components/PageTitle';
 import GeneratorTab from '../Components/GeneratorTab';
 import useFetch from '../hooks/useFetch';

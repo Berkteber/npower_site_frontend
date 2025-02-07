@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import { BrowserRouter } from 'react-router-dom';
-import { LoadingProvider } from './context/LoadingContext';
 
 config.autoAddCss = false;
 
@@ -15,9 +14,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <LoadingProvider>
-        <App />
-      </LoadingProvider>
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -33,7 +33,7 @@ const BackToTop = () => {
                 <button onClick={scrollToTop} className="backtotop"><FontAwesomeIcon icon={faAngleUp} /></button>
             )}
             <a className="whatsapp-icon" href="https://wa.me/900000000000" target="_blank" rel="noopener noreferrer">
-                <img src="Assets/image/icon/whatsapp_icon.svg"/>
+                <img src="Assets/image/icon/whatsapp_icon.svg" alt="whatsapp"/>
             </a>
         </>
     );

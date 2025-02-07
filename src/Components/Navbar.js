@@ -45,10 +45,10 @@ const Navbar = () => {
               </a>
             </div>
             <div className="col-6 navbar-button">
-              <a href="#">
+              <a href="https://www.instagram.com/npowergenerator/" target='_blank'>
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/company/npower-generator/" target='_blank'>
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
               <a href="#">
