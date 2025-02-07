@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-function useFetch(endpoint, baseUrl= 'https://npowersitecms-production.up.railway.app/api/') {
+function useFetch(endpoint, baseUrl= 'https://npowersitecms-production.up.railway.app/api') {
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
