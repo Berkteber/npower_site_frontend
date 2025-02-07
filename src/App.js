@@ -40,7 +40,7 @@ function App() {
         }
       }, 50); 
 
-      await new Promise((resolve) => setTimeout(resolve, 3100));
+      await new Promise((resolve) => setTimeout(resolve, 2100));
       setLoading(false);
     };
 
