@@ -23,7 +23,7 @@ function BlogSingle() {
     <>
     <div className="blog-single">
       <div className="blog-single-hero">
-        <img src={api + featuredImage} alt="Main Image"/>
+        <img src={api + featuredImage} alt="Main"/>
         <h2>{Title}</h2>
       </div>
       <div className="blog-single-content container">
@@ -111,7 +111,7 @@ function BlogSingle() {
                     <div className="col-md-6 d-flex align-items-center justify-content-center">
                       <img
                         src={`${api}${block.BlogtwocolImage.url}`}
-                        alt="Two Column Image"
+                        alt="Two Column"
                       />
                     </div>
                   </div>
