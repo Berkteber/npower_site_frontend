@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 
 function useFetch(endpoint, baseUrl = "https://npowersitecms-production.up.railway.app/api") {
@@ -7,9 +7,9 @@ function useFetch(endpoint, baseUrl = "https://npowersitecms-production.up.railw
     const [loading, setLoading] = useState(true);
     const api = "https://npowersitecms-production.up.railway.app";
 
-    const API_TOKEN = useMemo(() => process.env.REACT_APP_STRAPI_API_TOKEN, []);
-
     useEffect(() => {
+        const API_TOKEN = process.env.REACT_APP_STRAPI_API_TOKEN; 
+
         const fetchData = async () => {
             try {
                 const response = await axios.get(`${baseUrl}${endpoint}`, {
@@ -26,7 +26,7 @@ function useFetch(endpoint, baseUrl = "https://npowersitecms-production.up.railw
         };
 
         fetchData();
-    }, [endpoint, baseUrl]); // API_TOKEN bağımlılık dizisine eklenmedi
+    }, [endpoint, baseUrl]); 
 
     return { data, loading, error, api };
 }
