@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 
 function useFetch(endpoint, baseUrl = "https://npowersitecms-production.up.railway.app/api") {
@@ -7,8 +7,7 @@ function useFetch(endpoint, baseUrl = "https://npowersitecms-production.up.railw
     const [loading, setLoading] = useState(true);
     const api = "https://npowersitecms-production.up.railway.app";
 
-    // Strapi API Token (Güvenli bir şekilde .env dosyasına koymalısın)
-    const API_TOKEN = process.env.REACT_APP_STRAPI_API_TOKEN;
+    const API_TOKEN = useMemo(() => process.env.REACT_APP_STRAPI_API_TOKEN, []);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -27,7 +26,7 @@ function useFetch(endpoint, baseUrl = "https://npowersitecms-production.up.railw
         };
 
         fetchData();
-    }, [endpoint, baseUrl]);
+    }, [endpoint, baseUrl]); // API_TOKEN bağımlılık dizisine eklenmedi
 
     return { data, loading, error, api };
 }
