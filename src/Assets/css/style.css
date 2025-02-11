@@ -2495,6 +2495,15 @@ h3 {
     flex: 1 1 calc(50% - 10px);
     max-width: calc(50% - 10px);
   }
+  .hero-grid .hero-item:hover {
+    width: 230px !important;
+  }
+  .hero-grid .hero-item:hover img {
+    display: block !important;
+  }
+  .hero-grid .hero-item:hover .hero-desc {
+    display: none;
+  }
   .content-area .counter-link {
     padding-top: 20px;
   }
@@ -2896,7 +2905,13 @@ h3 {
     max-width: calc(50% - 10px);
   }
   .hero-grid .hero-item:hover {
-    width: 230px;
+    width: 230px !important;
+  }
+  .hero-grid .hero-item:hover img {
+    display: block !important;
+  }
+  .hero-grid .hero-item:hover .hero-desc {
+    display: none;
   }
   .content-area .counter-link {
     padding-top: 20px;

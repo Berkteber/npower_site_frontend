@@ -2480,6 +2480,18 @@ h3 {
         .hero-item{
             flex: 1 1 calc(50% - 10px);
             max-width: calc(50% - 10px);
+
+            &:hover{
+                width: 230px !important;
+
+                img{
+                    display: block !important;
+                }
+
+                .hero-desc{
+                    display: none;
+                }
+            }
         }
     }
 
@@ -3022,7 +3034,15 @@ h3 {
             max-width: calc(50% - 10px);
 
             &:hover{
-                width: 230px;
+                width: 230px !important;
+
+                img{
+                    display: block !important;
+                }
+
+                .hero-desc{
+                    display: none;
+                }
             }
         }
     }
