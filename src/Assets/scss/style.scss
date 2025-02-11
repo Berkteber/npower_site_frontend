@@ -2477,21 +2477,21 @@ h3 {
         justify-content: center;
         gap:16px;
 
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: transparent;
+        }
+
         .hero-item{
             flex: 1 1 calc(50% - 10px);
             max-width: calc(50% - 10px);
-
-            &:hover{
-                width: 230px !important;
-
-                img{
-                    display: block !important;
-                }
-
-                .hero-desc{
-                    display: none;
-                }
-            }
         }
     }
 
@@ -3028,21 +3028,26 @@ h3 {
         flex-wrap: wrap;
         justify-content: center;
         gap:16px;
+        position: relative;
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: transparent;
+        }
 
         .hero-item{
             flex: 1 1 calc(50% - 10px);
             max-width: calc(50% - 10px);
 
             &:hover{
-                width: 230px !important;
-
-                img{
-                    display: block !important;
-                }
-
-                .hero-desc{
-                    display: none;
-                }
+                width: 230px;
             }
         }
     }

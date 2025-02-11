@@ -2491,18 +2491,20 @@ h3 {
     justify-content: center;
     gap: 16px;
   }
+  .hero-grid::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+  }
   .hero-grid .hero-item {
     flex: 1 1 calc(50% - 10px);
     max-width: calc(50% - 10px);
-  }
-  .hero-grid .hero-item:hover {
-    width: 230px !important;
-  }
-  .hero-grid .hero-item:hover img {
-    display: block !important;
-  }
-  .hero-grid .hero-item:hover .hero-desc {
-    display: none;
   }
   .content-area .counter-link {
     padding-top: 20px;
@@ -2899,19 +2901,25 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
+    position: relative;
+  }
+  .hero-grid::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
   }
   .hero-grid .hero-item {
     flex: 1 1 calc(50% - 10px);
     max-width: calc(50% - 10px);
   }
   .hero-grid .hero-item:hover {
-    width: 230px !important;
-  }
-  .hero-grid .hero-item:hover img {
-    display: block !important;
-  }
-  .hero-grid .hero-item:hover .hero-desc {
-    display: none;
+    width: 230px;
   }
   .content-area .counter-link {
     padding-top: 20px;
