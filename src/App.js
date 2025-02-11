@@ -20,8 +20,8 @@ import SismikTitresim from "./Pages/SismikTitresim.js";
 import BlogSingle from "./Pages/BlogSingle.js";
 import BlogList from "./Pages/BlogList.js";
 
-// Sayfa değiştiğinde yenileme yapan bileşen
-function PageReload() {
+// Sayfa değiştiğinde yenileme fonksiyonu
+function PageReloader() {
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -34,7 +34,7 @@ function PageReload() {
 function App() {
   return (
     <>
-      <PageReload /> 
+      <PageReloader /> {/* Sayfa değiştiğinde yenileme yapacak bileşen */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
