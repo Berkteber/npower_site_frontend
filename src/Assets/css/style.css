@@ -54,7 +54,6 @@ body {
   line-height: 19px;
   color: #33363B;
   background-color: #ffffff;
-  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -366,17 +365,9 @@ footer {
   position: relative;
   opacity: 0;
   animation: fadeIn 0.5s ease-in-out forwards;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
 }
 .loader-container .npower-lightning {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
 }
 
 /* Opacity animasyonu */
