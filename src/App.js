@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
@@ -20,23 +20,16 @@ import SismikTitresim from "./Pages/SismikTitresim.js";
 import BlogSingle from "./Pages/BlogSingle.js";
 import BlogList from "./Pages/BlogList.js";
 
-// Sayfa değiştiğinde yenileme fonksiyonu
-function PageReloader() {
-  const { pathname } = useLocation();
+function App() {
+  const location = useLocation();
+  const [navKey, setNavKey] = useState(0);
 
   useEffect(() => {
-    window.location.reload();
-  }, [pathname]);
-
-  return null;
-}
-
-function App() {
+    setNavKey(prevKey => prevKey + 1);
   return (
     <>
-      <PageReloader /> {/* Sayfa değiştiğinde yenileme yapacak bileşen */}
-      <Navbar />
-      <Routes>
+      <Navbar key={navKey} />
+      <Routes key={location.pathname}> 
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/ses-yalitimi" element={<SesYalitimi />} />
