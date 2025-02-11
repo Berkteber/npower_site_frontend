@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
@@ -20,12 +20,21 @@ import SismikTitresim from "./Pages/SismikTitresim.js";
 import BlogSingle from "./Pages/BlogSingle.js";
 import BlogList from "./Pages/BlogList.js";
 
+// Sayfa değiştiğinde yenileme yapan bileşen
+function PageReload() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.location.reload();
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
-  const location = useLocation();
-
-
   return (
     <>
+      <PageReload /> 
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
