@@ -2,6 +2,7 @@ import React from "react";
 import useFetch from "../hooks/useFetch";
 import PageTitle from "../Components/PageTitle";
 import GeneratorTab from "../Components/GeneratorTab";
+import Loader from "../Components/Loader";
 
 const DieselGenerator = () => {
   const { data, loading, error, api } = useFetch(

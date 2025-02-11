@@ -3,6 +3,7 @@ import PageTitle from '../Components/PageTitle';
 import ProductMain from '../Components/ProductMain';
 import OfferForm from '../Components/OfferForm';
 import useFetch from '../hooks/useFetch';
+import Loader from '../Components/Loader';
 
 function SesYalitimi() {
   const { data, loading, error, api } = useFetch(

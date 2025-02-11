@@ -4,6 +4,7 @@ import ProductMain from '../Components/ProductMain';
 import ContactDesc from '../Components/ContactDesc';
 import OfferForm from '../Components/OfferForm'; 
 import useFetch from '../hooks/useFetch';
+import Loader from '../Components/Loader';
 
 function OrtaVoltaj() {
     const { data, loading, error, api } = useFetch('/medium-voltage-page?populate=MainImage&populate=PanelItem&populate=MediumVoltageFeatures&populate=Brands');

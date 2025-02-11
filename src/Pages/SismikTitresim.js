@@ -4,6 +4,7 @@ import ProductMain from '../Components/ProductMain';
 import ContactDesc from '../Components/ContactDesc';
 import OfferForm from '../Components/OfferForm'; 
 import useFetch from '../hooks/useFetch';
+import Loader from '../Components/Loader';
 
 function SismikTitresim() {
   const { data, loading, error, api } = useFetch(

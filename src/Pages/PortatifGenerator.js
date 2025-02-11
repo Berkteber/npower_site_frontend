@@ -1,6 +1,7 @@
 import PageTitle from '../Components/PageTitle';
 import GeneratorTab from '../Components/GeneratorTab';
 import useFetch from '../hooks/useFetch';
+import Loader from '../Components/Loader';
 
 const PortatifGeerator = () => {
   const { data, loading, error, api } = useFetch(

@@ -1,5 +1,6 @@
 import React from 'react';
 import useFetch from '../hooks/useFetch';
+import Loader from '../Components/Loader';
 
 const CatalogItem = ({ img, title, catalogLink }) => {
   return (

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import FormArea from '../Components/FormArea.js'
+import Loader from "../Components/Loader.js";
 
 const BlogItem = ({ img, title, date, link }) => {
   return (

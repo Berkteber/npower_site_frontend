@@ -2,6 +2,7 @@ import React from 'react';
 import PageTitle from '../Components/PageTitle';
 import GeneratorTab from '../Components/GeneratorTab';
 import useFetch from '../hooks/useFetch';
+import Loader from '../Components/Loader';
 
 const GasGenerator = () => {
   const { data, loading, error, api } = useFetch(
