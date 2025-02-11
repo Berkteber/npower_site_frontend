@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/autoplay";
 
-const Loader = ({ progress }) => {
+const Loader = () => {
 
   return (
     <div className="loader-container">
