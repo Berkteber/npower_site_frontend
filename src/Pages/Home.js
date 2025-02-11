@@ -19,7 +19,7 @@ function Home() {
     "/blogs?populate=Content.Image&populate=FeaturedImage"
   );
 
-  if (loading || blogsLoading) return <div> </div>;
+  if (loading || blogsLoading) return <div className="loader-container"><Loader progress={progress} /></div>;
   if (error || blogsError) return <div>Error: {error?.message || blogsError?.message}</div>;
 
   const logos = data.Brands?.map((brand) => ({

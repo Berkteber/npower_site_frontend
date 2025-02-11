@@ -19,41 +19,41 @@ import OrtaVoltaj from "./Pages/OrtaVoltaj.js";
 import SismikTitresim from "./Pages/SismikTitresim.js";
 import BlogSingle from "./Pages/BlogSingle.js";
 import BlogList from "./Pages/BlogList.js";
-import Loader from "./Components/Loader";
+// import Loader from "./Components/Loader";
 
 function App() {
-  const [loading, setLoading] = useState(true);
-  const [progress, setProgress] = useState(0); 
+  // const [loading, setLoading] = useState(true);
+  // const [progress, setProgress] = useState(0); 
   const location = useLocation();
 
-  useEffect(() => {
-    const fetchData = async () => {
-      setLoading(true);
-      setProgress(0);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     setLoading(true);
+  //     setProgress(0);
 
-      let currentProgress = 0;
-      const interval = setInterval(() => {
-        currentProgress += 5;
-        setProgress(currentProgress);
-        if (currentProgress >= 100) {
-          clearInterval(interval);
-        }
-      }, 50); 
+  //     let currentProgress = 0;
+  //     const interval = setInterval(() => {
+  //       currentProgress += 5;
+  //       setProgress(currentProgress);
+  //       if (currentProgress >= 100) {
+  //         clearInterval(interval);
+  //       }
+  //     }, 50); 
 
-      await new Promise((resolve) => setTimeout(resolve, 2100));
-      setLoading(false);
-    };
+  //     await new Promise((resolve) => setTimeout(resolve, 2100));
+  //     setLoading(false);
+  //   };
 
-    fetchData();
-  }, [location.pathname]);
+  //   fetchData();
+  // }, [location.pathname]);
 
-  if (loading) {
-    return (
-      <div className="loader-container">
-        <Loader progress={progress} />
-      </div>
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <div className="loader-container">
+  //       <Loader progress={progress} />
+  //     </div>
+  //   );
+  // }
 
   return (
     <>

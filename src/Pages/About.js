@@ -5,13 +5,14 @@ import WhatWeDo from '../Components/WhatWeDo';
 import VisionMision from '../Components/VisionMision'; 
 import AboutCertificate from '../Components/AboutCertificate';
 import useFetch from '../hooks/useFetch.js';
+import Loader from '../Components/Loader.js';
 
 function About() {
   const { data, loading, error, api } = useFetch(
     '/about-page?populate=WhoAreWe.Image&populate=WhatWeDo.Image&populate=VissionMissionArge.VissionMissionImage&populate=VissionMissionArge.ArgeImage&populate=Certificate.Image'
   );
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className="loader-container"><Loader progress={progress} /></div>;
   if (error) return <div>Error: {error.message}</div>;
 
   const aboutMainData = {
