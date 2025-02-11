@@ -2501,6 +2501,7 @@ h3 {
     right: 0;
     bottom: 0;
     background: transparent;
+    z-index: 9999999;
   }
   .hero-grid .hero-item {
     flex: 1 1 calc(50% - 10px);
