@@ -366,15 +366,17 @@ footer {
   position: relative;
   opacity: 0;
   animation: fadeIn 0.5s ease-in-out forwards;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 .loader-container .npower-lightning {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 /* Opacity animasyonu */
