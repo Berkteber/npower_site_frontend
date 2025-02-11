@@ -12,13 +12,15 @@ import useFetch from '../hooks/useFetch.js';
 import Loader from '../Components/Loader.js';
 
 function Home() {
-  const { data, loading, error, api } = useFetch(
+  const { data, error, api } = useFetch(
     '/home-page?populate=Brands.Logo&populate=HeroSection.HeroItem&populate=HeroSection.HeroItem.Image&populate=HeroSection.HeroItem.Background&populate=ServicesSection&populate=ServicesSection.Image&populate=CounterSection.CounterItem.Icon'
   );
 
   const { data: blogsData, loading: blogsLoading, error: blogsError } = useFetch(
     "/blogs?populate=Content.Image&populate=FeaturedImage"
   );
+
+  const loading = true
 
   if (loading || blogsLoading) return <div className="loader-container"><Loader/></div>;
   if (error || blogsError) return <div>Error: {error?.message || blogsError?.message}</div>;
