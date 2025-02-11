@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import useFetch from '../hooks/useFetch.js';
+import Loader from '../Components/Loader.js';
 
 function Home() {
   const { data, loading, error, api } = useFetch(
@@ -19,7 +20,7 @@ function Home() {
     "/blogs?populate=Content.Image&populate=FeaturedImage"
   );
 
-  if (loading || blogsLoading) return <div className="loader-container"><Loader progress={progress} /></div>;
+  if (loading || blogsLoading) return <div className="loader-container"><Loader/></div>;
   if (error || blogsError) return <div>Error: {error?.message || blogsError?.message}</div>;
 
   const logos = data.Brands?.map((brand) => ({

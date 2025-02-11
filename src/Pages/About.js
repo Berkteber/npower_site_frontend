@@ -12,7 +12,7 @@ function About() {
     '/about-page?populate=WhoAreWe.Image&populate=WhatWeDo.Image&populate=VissionMissionArge.VissionMissionImage&populate=VissionMissionArge.ArgeImage&populate=Certificate.Image'
   );
 
-  if (loading) return <div className="loader-container"><Loader progress={progress} /></div>;
+  if (loading) return <div className="loader-container"><Loader/></div>;
   if (error) return <div>Error: {error.message}</div>;
 
   const aboutMainData = {
