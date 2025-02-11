@@ -25,7 +25,9 @@ function App() {
   const [navKey, setNavKey] = useState(0);
 
   useEffect(() => {
-    setNavKey(prevKey => prevKey + 1);
+    setNavKey(prevKey => prevKey + 1); 
+  }, [location.pathname]); 
+
   return (
     <>
       <Navbar key={navKey} />
