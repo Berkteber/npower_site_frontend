@@ -8,7 +8,7 @@ import useFetch from '../hooks/useFetch';
 function KurulumMontaj() {
   const { data, loading, error, api } = useFetch('/installation-page?populate=Image');
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className="loader-container"><Loader/></div>;
   if (error) return <div>Error: {error.message}</div>;
 
   const { Title, Content, Image } = data;

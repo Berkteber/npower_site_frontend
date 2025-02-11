@@ -8,7 +8,7 @@ const GasGenerator = () => {
     "/generator-page?populate=GasGenerators.TabImage&populate=GasGenerators.TableRows&populate=GasGenerators.TableRows.Image"
   );
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className="loader-container"><Loader/></div>;
   if (error) return <div>Error: {error.message}</div>;
 
   const gasGenerators = data.GasGenerators || [];

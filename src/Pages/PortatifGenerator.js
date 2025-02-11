@@ -7,7 +7,7 @@ const PortatifGeerator = () => {
     "/generator-page?populate=PortableGenerator.TabImage&populate=PortableGenerator.TableRows&populate=PortableGenerator.TableRows.Image"
   );
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className="loader-container"><Loader/></div>;
   if (error) return <div>Error: {error.message}</div>;
 
   const PortableGenerator = data.PortableGenerator || [];

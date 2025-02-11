@@ -30,7 +30,7 @@ const BlogList = () => {
     `/blogs?populate=FeaturedImage&Content.Image&pagination[page]=${currentPage}&pagination[pageSize]=${blogsPerPage}`
   );
 
-  if (loading) return <p>Yükleniyor...</p>;
+  if (loading) return <div className="loader-container"><Loader/></div>;
   if (error) return <p>Hata: {error.message}</p>;
 
   const blogs = data || [];

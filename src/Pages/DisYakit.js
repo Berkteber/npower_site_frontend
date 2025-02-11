@@ -10,7 +10,7 @@ function DisYakit() {
     '/outer-fuel-tank?populate=Image&populate=OuterFuelTank'
   );
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className="loader-container"><Loader/></div>;
   if (error) return <div>Error: {error.message}</div>;
 
   const { Title, Content, Image, OuterFuelTank } = data;

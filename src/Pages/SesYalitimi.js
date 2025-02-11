@@ -9,7 +9,7 @@ function SesYalitimi() {
     '/sound-proof-container?populate=MainImage&populate=SoundProofGeneratorData.GeneratorDataDescription&populate=SoundProofGeneratorData.GeneratorDataFeatures&populate=SoundProofGeneratorData.SoundProofGeneratorImage&populate=SoundProofFeatures.FeaturesImage&populate=SoundProofFeatures.SoundProofFeaturItems'
   );
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className="loader-container"><Loader/></div>;
   if (error) return <div>Error: {error.message}</div>;
 
   const {

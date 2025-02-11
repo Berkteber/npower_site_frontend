@@ -8,7 +8,7 @@ import useFetch from '../hooks/useFetch';
 function OrtaVoltaj() {
     const { data, loading, error, api } = useFetch('/medium-voltage-page?populate=MainImage&populate=PanelItem&populate=MediumVoltageFeatures&populate=Brands');
 
-    if (loading) return <div>Loading...</div>;
+    if (loading) return <div className="loader-container"><Loader/></div>;
     if (error) return <div>Error: {error.message}</div>;
 
     const { Title, Content, MainImage, PanelItem, MediumVoltageFeatures} = data;

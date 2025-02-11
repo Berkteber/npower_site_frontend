@@ -10,7 +10,7 @@ function DusukVoltaj() {
     '/low-voltage-page?populate=MainImage&populate=FeaturesHead.Icon&populate=Brands&populate=FeaturesRight'
   );
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className="loader-container"><Loader/></div>;
   if (error) return <div>Error: {error.message}</div>;
 
   const {

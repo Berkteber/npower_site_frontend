@@ -10,7 +10,7 @@ function SismikTitresim() {
     '/seismic-vibration-page?populate=MainImage&populate=RightImage&populate=BrandLogos.Image'
   );
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className="loader-container"><Loader/></div>;
   if (error) return <div>Error: {error.message}</div>;
 
   const {

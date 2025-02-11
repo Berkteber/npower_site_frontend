@@ -10,7 +10,7 @@ function YakitTanki() {
     '/fuel-tank-page?populate=Image'
   );
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className="loader-container"><Loader/></div>;
   if (error) return <div>Error: {error.message}</div>;
 
   const { Title, Image, Content } = data;
