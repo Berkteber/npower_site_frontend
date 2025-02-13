@@ -103,7 +103,7 @@ const FormArea = () => {
                     </div>
 
                     <div className="form-group">
-                        <textarea className="message-input" name="message" id="message" placeholder="Sorularınız" value={formData.message} onChange={handleChange} required />
+                        <input className="message-input" name="message" id="message" placeholder="Sorularınız" value={formData.message} onChange={handleChange} required />
                     </div>
                     <button className="form-button" type="submit">Gönder</button>
                 </form>
