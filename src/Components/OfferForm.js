@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import { submitForm } from "../services/api";
+import { submitForm } from "../hooks/formapi.js";
 
 const OfferForm = () => {
   const [formData, setFormData] = useState({
