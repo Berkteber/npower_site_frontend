@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { submitForm } from "../services/api"; // API bağlantısı için gerekli fonksiyon
+import { submitForm } from "../hooks/formapi.js";
 
 function Contact() {
   const [formData, setFormData] = useState({
