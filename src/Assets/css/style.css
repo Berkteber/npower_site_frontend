@@ -597,20 +597,14 @@ footer {
 .services .services-grid .services-item-left::before {
   content: "";
   position: absolute;
-  top: -0.5px;
-  left: -200%;
-  background-color: #7FAEB0;
-  height: 0.5px;
-  width: 200%;
-}
-.services .services-grid .services-item-left::after {
-  content: "";
-  position: absolute;
-  bottom: -0.5px;
-  left: -200%;
-  background-color: #7FAEB0;
-  height: 0.5px;
-  width: 200%;
+  width: 50%;
+  height: 101%;
+  left: -50%;
+  top: -1px;
+  border-left: 1px solid #7faeb0;
+  border-top: 1px solid #7faeb0;
+  border-bottom: 1px solid #7faeb0;
+  border-radius: 72px 0 0 72px;
 }
 .services .services-grid .services-item-right {
   padding-left: 44px;
@@ -621,20 +615,14 @@ footer {
 .services .services-grid .services-item-right::before {
   content: "";
   position: absolute;
-  top: -0.5px;
-  right: -200%;
-  background-color: #7FAEB0;
-  height: 0.5px;
-  width: 200%;
-}
-.services .services-grid .services-item-right::after {
-  content: "";
-  position: absolute;
-  bottom: -0.5px;
-  right: -200%;
-  background-color: #7FAEB0;
-  height: 0.5px;
-  width: 200%;
+  width: 50%;
+  height: 101%;
+  right: -50%;
+  top: -1px;
+  border-left: 1px solid #7faeb0;
+  border-top: 1px solid #7faeb0;
+  border-bottom: 1px solid #7faeb0;
+  border-radius: 72px 0 0 72px;
 }
 .services .services-contact {
   display: flex;
