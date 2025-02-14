@@ -585,8 +585,7 @@ footer {
 }
 .services .services-grid .services-item:hover::before {
   background-color: #E4F2F3;
-  height: 100%;
-  border-top: 1px solid #7FAEB0;
+  height: 101%;
 }
 .services .services-grid .services-item-left {
   padding-right: 28px;
@@ -605,6 +604,7 @@ footer {
   border-top: 1px solid #7faeb0;
   border-bottom: 1px solid #7faeb0;
   border-radius: 72px 0 0 72px;
+  transition: 0.2s ease;
 }
 .services .services-grid .services-item-right {
   padding-left: 44px;

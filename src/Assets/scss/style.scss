@@ -303,8 +303,7 @@
 
             &::before{
                 background-color: #E4F2F3;
-                height: 100%;
-                border-top: 1px solid #7FAEB0;
+                height: 101%;
             }
         }
 
@@ -325,6 +324,7 @@
                 border-top: 1px solid #7faeb0;
                 border-bottom: 1px solid #7faeb0;
                 border-radius: 72px 0 0 72px;
+                transition: .2s ease;            
             }
         }
 
