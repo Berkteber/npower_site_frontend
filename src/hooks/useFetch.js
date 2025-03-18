@@ -10,6 +10,9 @@ function useFetch(endpoint, baseUrl = "https://npowersitecms-production.up.railw
     useEffect(() => {
         const API_TOKEN = process.env.REACT_APP_STRAPI_API_TOKEN; 
 
+        console.log("🔍 API İsteği:", `${baseUrl}${endpoint}`);
+        console.log("🛡️ Kullanılan Token:", API_TOKEN);
+
         const fetchData = async () => {
             try {
                 const response = await axios.get(`${baseUrl}${endpoint}`, {
