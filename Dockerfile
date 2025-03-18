@@ -1,8 +1,6 @@
- 
-# Railway için React proje Dockerfile
-FROM node:18 AS build
+# Node.js 18 kullan
+FROM node:20
 
-# Çalışma dizinini belirle
 WORKDIR /app
 
 # package.json ve package-lock.json dosyalarını kopyala
@@ -10,6 +8,9 @@ COPY package.json package-lock.json ./
 
 # Bağımlılıkları yükle
 RUN npm install --legacy-peer-deps
+
+# Bellek sınırını artır
+ENV NODE_OPTIONS="--max-old-space-size=1024"
 
 # Diğer tüm dosyaları kopyala
 COPY . . 
