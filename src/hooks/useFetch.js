@@ -8,8 +8,9 @@ function useFetch(endpoint, baseUrl = "https://npowersitecms-production.up.railw
     const api = "https://npowersitecms-production.up.railway.app";
 
     useEffect(() => {
-        const API_TOKEN = process.env.REACT_APP_STRAPI_API_TOKEN; 
-
+        //const API_TOKEN = process.env.REACT_APP_STRAPI_API_TOKEN; 
+        const API_TOKEN = "9586f31333e1daa35a687913c5deb7ba6643b4b9a7007e1fbc6094084b049a42aa4ca7f78c659b2affaa75c1e4becfb50c4445973919b1c610b73c378dc24c1a2067a7c6101f73046bea7b901fc1821082ea49eebf433af0f63c288961de134fb9572d4ad2e23654c9b067166a2be32a86f55d5e3b97d383a04ca33966576458";
+        
         console.log("🔍 API İsteği:", `${baseUrl}${endpoint}`);
         console.log("🛡️ Kullanılan Token:", API_TOKEN);
 
