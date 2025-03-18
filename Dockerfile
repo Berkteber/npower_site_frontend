@@ -9,7 +9,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 
 # Bağımlılıkları yükle
-RUN npm install --omit=dev
+RUN npm install --legacy-peer-deps
 
 # Diğer tüm dosyaları kopyala
 COPY . . 
