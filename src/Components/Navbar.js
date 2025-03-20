@@ -81,7 +81,7 @@ const Navbar = () => {
                       <div className='dropdown-icon'>
                         <img src='/Assets/image/icon/ses-izolasyonlu-konteynir.svg' alt='' />
                       </div>
-                      <Link to="/ses-yalitimi">
+                      <Link to="/sound-proof-containers">
                         Sound Proof Containers
                       </Link>
                     </li>
@@ -89,7 +89,7 @@ const Navbar = () => {
                       <div className='dropdown-icon'>
                         <img src='/Assets/image/icon/voltaj.svg' alt='' />
                       </div>
-                      <Link to="/dusuk-voltaj">
+                      <Link to="/low-voltage-panels">
                       Low Voltage Panels
                       </Link>
                     </li>
@@ -97,7 +97,7 @@ const Navbar = () => {
                       <div className='dropdown-icon'>
                         <img src='/Assets/image/icon/voltaj.svg' alt='' />
                       </div>
-                      <Link to="/orta-voltaj">
+                      <Link to="/medium-voltage-panels">
                       Medium Voltage Panels
                       </Link>
                     </li>
@@ -105,7 +105,7 @@ const Navbar = () => {
                       <div className='dropdown-icon'>
                         <img src='/Assets/image/icon/kurulum.svg' alt='' />
                       </div>
-                      <Link to="/kurulum-montaj">
+                      <Link to="/installation-works">
                       Installation Works
                       </Link>
                     </li>
@@ -113,7 +113,7 @@ const Navbar = () => {
                       <div className='dropdown-icon'>
                         <img src='/Assets/image/icon/sismik_titresim.svg' alt='' />
                       </div>
-                      <Link to="/sismik-titresim">
+                      <Link to="/seismic-vibration-pads">
                         Seismic Vibration Pads
                       </Link>
                     </li>
@@ -121,7 +121,7 @@ const Navbar = () => {
                       <div className='dropdown-icon'>
                         <img src='/Assets/image/icon/dıs_yakit.svg' alt='' />
                       </div>
-                      <Link to="/dis-yakit">
+                      <Link to="/external-fuel-tanks">
                         External Fuel Tank
                       </Link>
                     </li>
@@ -129,7 +129,7 @@ const Navbar = () => {
                       <div className='dropdown-icon'>
                         <img src='/Assets/image/icon/generator_icon.svg' alt='' />
                       </div>
-                      <Link to="/yakit-tanki">
+                      <Link to="/fuel-tank-automation">
                         Fuel Tank Automation
                       </Link>
                     </li>
